@@ -1,12 +1,12 @@
-function arrCheck (arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] % 3 === 0) {
-            console.log("Да");
-            return;
+class MaxNum {
+    filter (a, b) {
+        if (a > b) {
+            return a;
+        } else {
+            return b;
         }
     }
-    console.log("Нет");
 }
 
-const numbers = [1, 4, 5, 9];
-arrCheck(numbers);
+const maxNum = new MaxNum();
+console.log(maxNum.filter(4, 7));
