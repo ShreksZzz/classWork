@@ -1,13 +1,14 @@
-class ArrSum {
-    findSum (arr) {
-        let sum = 0;
+class CheckArrayForNegative {
+    findNegative (arr) {
         for (let i = 0; i < arr.length; i++) {
-            sum += arr[i];
+            if (arr[i] < 0) {
+                return "Да";
+            }
         }
-        return sum;
+        return "Нет";
     }
 }
 
-const arrSum = new ArrSum();
-const numbers = [2, 5, 3, 9];
-console.log(arrSum.findSum(numbers));
+const numbers = [2, 4, 1, -1384];
+const checkArr = new CheckArrayForNegative();
+console.log(checkArr.findNegative(numbers));
