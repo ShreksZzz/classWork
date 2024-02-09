@@ -12,7 +12,10 @@
 // }
 
 
-let credit = document.querySelector(".credit");
-let years = document.querySelector(".years");
+let credit = document.getElementById("#cr");
 
-console.log(years);
+// const procent = 7;
+// let procentValue = credit / 100 * procent;
+// let itogo = credit + procentValue;
+
+console.log(credit);
