@@ -1,11 +1,12 @@
-function sumArr (arr) {
-    let sum = 0;
-
+function arrCheck (arr) {
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
+        if (arr[i] < 0) {
+            console.log("Да");
+            return;
+        }
     }
-    return sum;
+    console.log("Нет");
 }
 
-const numbers = [1, 2, 3, 4, 5];
-console.log(sumArr(numbers));
+const numbers = [2, 4, 6, -5]
+arrCheck(numbers);
