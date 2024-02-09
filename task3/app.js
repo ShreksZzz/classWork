@@ -9,4 +9,4 @@ class MaxNum {
 }
 
 const maxNum = new MaxNum();
-console.log(maxNum.filter(4, 7));
+console.log(maxNum.filter(4, 9));
