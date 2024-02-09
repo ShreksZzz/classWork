@@ -1,11 +1,11 @@
-function getMax (a, b) {
-    if (a > b) {
-        return a;
-    } else if (b > a) {
-        return b;
-    } else {
-        return(a);
+function sumArr (arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
     }
+    return sum;
 }
 
-console.log(getMax(1, 3));
+const numbers = [1, 2, 3, 4, 5];
+console.log(sumArr(numbers));
