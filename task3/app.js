@@ -1,6 +1,6 @@
 function arrCheck (arr) {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < 0) {
+        if (arr[i] % 3 === 0) {
             console.log("Да");
             return;
         }
@@ -8,5 +8,5 @@ function arrCheck (arr) {
     console.log("Нет");
 }
 
-const numbers = [2, 4, 6, -5]
+const numbers = [1, 4, 5, 9];
 arrCheck(numbers);
